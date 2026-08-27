@@ -20,16 +20,17 @@
 ---
 
 ## 📋 Índice
+
 - [Equipo de Desarrollo](#-equipo-de-desarrollo)
 - [Contexto y Problemática](#-contexto-y-problemática)
 - [Objetivos](#-objetivos)
-- [Arquitectura y Tecnologías](#-arquitectura-y-tecnologias)
+- [Arquitectura y Tecnologías](#-arquitectura-y-tecnología)
 - [Módulos del Sistema](#-módulos-del-sistema)
 - [Metodología de Trabajo](#-metodología-de-trabajo)
 - [Estructura del Repositorio](#-estructura-del-repositorio)
-- [Instalación y Configuración](#-instalación-y-configuracion)
-- [Modelado, Vistas y Documentación](#-modelado-vistas-y-documentacion)
-- [Pruebas y Validación](#-pruebas-y-validacion)
+- [Instalación y Configuración](#-instalación-y-configuración)
+- [Modelado, Vistas y Documentación](#-modelado-vistas-y-documentación)
+- [Pruebas y Validación](#-pruebas-y-validación)
 - [Lecciones Aprendidas](#-lecciones-aprendidas)
 - [Recomendaciones](#-recomendaciones)
 - [Agradecimientos](#-agradecimientos)
