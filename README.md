@@ -2,18 +2,18 @@
   <img src="https://github.com/darwinjcn/gcs-project/blob/main/captures/vistas-sistema/Ilustraci%C3%B3n%2034%20-%20Vista%20GCS%20Login.jpg" alt="GCS Login" width="600"/>
 </p>
 
-<h1 align="center">Sistema GCS — Gestión de Contingencias Satelitales</h1>
+<h1 align="center">📡 Sistema GCS — Gestión de Contingencias Satelitales</h1>
 <p align="center">
   <strong>Plataforma Web Centralizada para la Gerencia de Programa Plataforma Satelital de CANTV</strong><br>
   <em>Trabajo Especial de Grado — Certificado de Desarrollador de Software</em><br>
   <sub>UNETI · Programa Nacional de Formación en Informática · Julio 2026</sub>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Stack-Laravel%20%7C%20React%20%7C%20PostgreSQL-4A90E2?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Metodología-SCRUM-6DB33F?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Estado-MVP%20Completado%20%7C%20En%20Homologación-brightgreen?style=flat-square"/>
-</p>
+[![Laravel](https://img.shields.io/badge/Laravel-10.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com/)
+[![React](https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Scrum](https://img.shields.io/badge/Metodología-Scrum-00599C?style=for-the-badge&logo=scrum&logoColor=white)](https://scrumguides.org/)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 
 ---
 
@@ -154,6 +154,16 @@ El equipo adoptó **SCRUM** como marco de trabajo ágil, con Sprints de 2 semana
 - **Burndown General:** Pendiente inicial de 134 PH → 0 PH al cierre del Sprint 4.
 - **Deuda Técnica:** 3 PH arrastrados del Sprint 2 al 3 (generación de reportes PDF), compensados exitosamente.
 - **Cobertura MVP:** 100% de requisitos "Must Have" (MoSCoW) entregados.
+
+
+### Artefactos de Scrum utilizados
+
+- **Product Backlog** con priorización MoSCoW.
+- **Sprint Backlog** por iteración.
+- **Burndown Charts** por Sprint y general del proyecto.
+- **Gráfico de Velocidad del equipo**
+- **Sprint Review** con validación del Product Owner.
+- **Sprint Retrospective** para mejora continua.
 
 > 📈 Los gráficos de Burndown y Velocity están disponibles en [`/docs/`](./docs) y en [`/captures/modelado-casos-de-uso-secuencia/`](./captures/modelado-casos-de-uso-secuencia/).
 
