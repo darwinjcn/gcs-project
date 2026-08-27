@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/darwinjcn/gcs-project/blob/main/captures/vistas-sistema/Ilustraci%C3%B3n%2034%20-%20Vista%20GCS%20Login.jpg" alt="GCS Login" width="600"/>
+  <img src="https://raw.githubusercontent.com/darwinjcn/gcs-project/main/captures/vistas-sistema/Ilustraci%C3%B3n%2034%20-%20Vista%20GCS%20Login.jpg" alt="GCS Login" width="600"/>
 </p>
 
 <h1 align="center">📡 Sistema GCS — Gestión de Contingencias Satelitales</h1>
@@ -9,11 +9,13 @@
   <sub>UNETI · Programa Nacional de Formación en Informática · Julio 2026</sub>
 </p>
 
-[![Laravel](https://img.shields.io/badge/Laravel-10.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com/)
-[![React](https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Scrum](https://img.shields.io/badge/Metodología-Scrum-00599C?style=for-the-badge&logo=scrum&logoColor=white)](https://scrumguides.org/)
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+<p align="center">
+  <a href="https://laravel.com/"><img src="https://img.shields.io/badge/Laravel-10.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white"/></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=black"/></a>
+  <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/PostgreSQL-15+-336791?style=for-the-badge&logo=postgresql&logoColor=white"/></a>
+  <a href="https://scrumguides.org/"><img src="https://img.shields.io/badge/Metodología-Scrum-00599C?style=for-the-badge&logo=scrum&logoColor=white"/></a>
+  <a href="https://git-scm.com/"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/></a>
+</p>
 
 ---
 
@@ -26,7 +28,7 @@
 - [Metodología de Trabajo](#-metodología-de-trabajo)
 - [Estructura del Repositorio](#-estructura-del-repositorio)
 - [Instalación y Configuración](#-instalación-y-configuración)
-- [Artefactos y Documentación](#-artefactos-y-documentación)
+- [Modelado, Vistas y Documentación](#-modelado-vistas-y-documentación)
 - [Pruebas y Validación](#-pruebas-y-validación)
 - [Lecciones Aprendidas](#-lecciones-aprendidas)
 - [Recomendaciones](#-recomendaciones)
@@ -155,7 +157,6 @@ El equipo adoptó **SCRUM** como marco de trabajo ágil, con Sprints de 2 semana
 - **Deuda Técnica:** 3 PH arrastrados del Sprint 2 al 3 (generación de reportes PDF), compensados exitosamente.
 - **Cobertura MVP:** 100% de requisitos "Must Have" (MoSCoW) entregados.
 
-
 ### Artefactos de Scrum utilizados
 
 - **Product Backlog** con priorización MoSCoW.
@@ -218,6 +219,14 @@ gcs-project/
 - Composer >= 2.0
 - Node.js >= 20 & npm
 - PostgreSQL >= 14
+- Git
+
+### 🖥️ Clonar el Repositorio
+
+```bash
+git clone https://github.com/darwinjcn/gcs-project.git
+cd gcs-project
+```
 
 ### 🔧 Backend (Laravel)
 
@@ -229,18 +238,26 @@ composer install
 
 # 2. Configurar variables de entorno
 cp .env.example .env
-# Editar .env con credenciales de PostgreSQL y configuración SMTP
 
-# 3. Generar clave de aplicación
+# 3. Editar .env con credenciales de PostgreSQL y configuración SMTP
+# Ejemplo de configuración de base de datos:
+# DB_CONNECTION=pgsql
+# DB_HOST=127.0.0.1
+# DB_PORT=5432
+# DB_DATABASE=gcs_database
+# DB_USERNAME=tu_usuario
+# DB_PASSWORD=tu_contraseña
+
+# 4. Generar clave de aplicación
 php artisan key:generate
 
-# 4. Ejecutar migraciones y seeders (opcional)
+# 5. Ejecutar migraciones y seeders (crea tablas y datos de prueba)
 php artisan migrate --seed
 
-# 5. Crear enlace simbólico para almacenamiento de documentos
+# 6. Crear enlace simbólico para almacenamiento de documentos
 php artisan storage:link
 
-# 6. Iniciar servidor de desarrollo
+# 7. Iniciar servidor de desarrollo
 php artisan serve
 ```
 
@@ -266,11 +283,11 @@ npm run dev
 ```
 
 ### 🐘 Notas sobre PostgreSQL
-Asegúrate de crear la base de datos `gcs_cantv` con codificación `UTF8` y configurar el acceso en el `.env` del backend. El esquema incluye tablas para usuarios, roles, contingencias, documentos, foros, comentarios, eventos de calendario y logs de auditoría con integridad referencial completa.
+Asegúrate de crear la base de datos `gcs_database` (o el nombre que definas en tu `.env`) con codificación `UTF8` y configurar el acceso en el `.env` del backend. El esquema incluye tablas para usuarios, roles, contingencias, documentos, foros, comentarios, eventos de calendario y logs de auditoría con integridad referencial completa.
 
 ---
 
-## 📚 Artefactos y Documentación
+## 📚 Modelado, Vistas y Documentación
 
 ### Modelado UML
 Los diagramas de casos de uso y secuencia se encuentran en [`captures/modelado-casos-de-uso-secuencia/`](./captures/modelado-casos-de-uso-secuencia/):
@@ -283,16 +300,20 @@ Screenshots funcionales disponibles en [`captures/vistas-sistema/`](./captures/v
 
 | Vista | Descripción |
 |:---|:---|
-| Login | Pantalla de acceso con validación de dominio `@cantv.com.ve` |
-| Recuperación de contraseña | Modal de envío de clave temporal por correo |
-| Dashboard | Panel panorámico con alertas activas, documentos, hilos y eventos |
-| Contingencias | Tabla cronológica con filtros de prioridad, estado y sede |
-| Foro Técnico | Listado de temas abiertos/cerrados con acciones CRUD |
-| Documentación | Gestor de archivos técnicos con paginación y búsqueda |
-| Calendario | Vista mensual de mantenimientos programados |
-| Perfil de usuario | Gestión de contraseña y datos personales |
+| <a href="https://github.com/darwinjcn/gcs-project/blob/main/captures/vistas-sistema/Ilustraci%C3%B3n%2034%20-%20Vista%20GCS%20Login.jpg" target="_blank">Login</a> | Pantalla de acceso con validación de dominio `@cantv.com.ve` |
+| <a href="https://github.com/darwinjcn/gcs-project/blob/main/captures/vistas-sistema/Ilustraci%C3%B3n%2035%20-%20Vista%20GCS%20Recuperaci%C3%B3n%20de%20contrase%C3%B1a.jpg" target="_blank">Recuperación de contraseña</a> | Modal de envío de clave temporal por correo |
+| <a href="https://github.com/darwinjcn/gcs-project/blob/main/captures/vistas-sistema/Ilustraci%C3%B3n%2036%20-%20Vista%20GCS%20Cierre%20de%20sesi%C3%B3n.jpg" target="_blank">Cierre de sesión</a> | Confirmación de cierre de sesión activa |
+| <a href="https://github.com/darwinjcn/gcs-project/blob/main/captures/vistas-sistema/Ilustraci%C3%B3n%2037%20-%20Vista%20GCS%20Dashboard.jpg" target="_blank">Dashboard</a> | Panel panorámico con alertas activas, documentos, hilos y eventos |
+| <a href="https://github.com/darwinjcn/gcs-project/blob/main/captures/vistas-sistema/Ilustraci%C3%B3n%2038%20-%20Vista%20GCS%20Contingencia.jpg" target="_blank">Contingencias</a> | Tabla cronológica con filtros de prioridad, estado y sede |
+| <a href="https://github.com/darwinjcn/gcs-project/blob/main/captures/vistas-sistema/Ilustraci%C3%B3n%2039%20-%20Vista%20GCS%20Foro%20T%C3%A9cnico.jpg" target="_blank">Foro Técnico</a> | Listado de temas abiertos/cerrados con acciones CRUD |
+| <a href="https://github.com/darwinjcn/gcs-project/blob/main/captures/vistas-sistema/Ilustraci%C3%B3n%2040%20-%20Vista%20GCS%20Crear%20nuevo%20tema%20en%20foro.jpg" target="_blank">Crear nuevo tema en foro</a> | Formulario de creación de hilos de discusión técnica |
+| <a href="https://github.com/darwinjcn/gcs-project/blob/main/captures/vistas-sistema/Ilustraci%C3%B3n%2041%20-%20Vista%20GCS%20Documentaci%C3%B3n.jpg" target="_blank">Documentación</a> | Gestor de archivos técnicos con paginación y búsqueda |
+| <a href="https://github.com/darwinjcn/gcs-project/blob/main/captures/vistas-sistema/Ilustraci%C3%B3n%2042%20-%20Vista%20GCS%20Calendario.jpg" target="_blank">Calendario</a> | Vista mensual de mantenimientos programados |
+| <a href="https://github.com/darwinjcn/gcs-project/blob/main/captures/vistas-sistema/Ilustraci%C3%B3n%2043%20-%20Vista%20GCS%20Perfil%20de%20usuario.jpg" target="_blank">Perfil de usuario</a> | Gestión de contraseña y datos personales |
 
-### Documentación Académica
+> 💡 **Nota:** Haz clic en cualquier vista de la tabla para ver el screenshot completo en el navegador.
+
+### Documentación
 - **[`docs/01.informe-final.pdf`](./docs/01.informe-final.pdf)** — Informe técnico completo: marco teórico, metodológico, resultados, conclusiones y recomendaciones.
 - **[`docs/Recuperación de Contraseña en Laravel.pdf`](./docs/Recuperación%20de%20Contraseña%20en%20Laravel.pdf)** — Especificación técnica del módulo de recuperación de credenciales.
 
