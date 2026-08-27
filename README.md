@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/darwinjcn/gcs-project/blob/main/captures/vistas-sistema/Ilustración%2034%20-%20Vista%20GCS%20Login.jpg" alt="GCS Login" width="600"/>
+  <img src="https://github.com/darwinjcn/gcs-project/blob/main/captures/vistas-sistema/Ilustraci%C3%B3n%2034%20-%20Vista%20GCS%20Login.jpg" alt="GCS Login" width="600"/>
 </p>
 
 <h1 align="center">Sistema GCS — Gestión de Contingencias Satelitales</h1>
