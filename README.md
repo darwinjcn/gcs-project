@@ -140,6 +140,27 @@ La plataforma consolidó **cinco módulos críticos** más los subsistemas de se
 
 El equipo adoptó **SCRUM** como marco de trabajo ágil, con Sprints de 2 semanas, una velocidad asumida inicial de 20 puntos de historia y un Product Backlog de 33 Historias de Usuario (134 PH totales).
 
+### Herramienta de Gestión — Trello
+
+Para la planificación, seguimiento y visualización del flujo de trabajo, el equipo utilizó **Trello** como herramienta de gestión de proyectos ágil. Se configuró un tablero con las siguientes columnas:
+
+| Columna | Propósito |
+|:---|:---|
+| **Product Backlog** | Historias de usuario priorizadas según MoSCoW. |
+| **Sprint Backlog** | Historias comprometidas para el Sprint en curso. |
+| **En Progreso** | Tareas activas asignadas a un miembro del equipo. |
+| **Revisión / QA** | Tareas completadas en espera de validación del Product Owner. |
+| **Hecho** | Historias aprobadas y entregables validados. |
+
+Cada historia de usuario se representó como una **tarjeta de Trello** que incluía:
+- **Título** descriptivo y código de historia (HU-XX).
+- **Descripción** con criterios de aceptación.
+- **Etiquetas de prioridad** (Must Have / Should Have / Could Have / Won't Have).
+- **Asignación** de responsable y estimación en puntos de historia.
+- **Checklist** de subtareas técnicas (diseño, desarrollo, pruebas).
+
+> 🎯 Trello facilitó la transparencia del proceso, permitiendo al Scrum Master monitorear el progreso diario y al Product Owner validar avances en tiempo real.
+
 ### Planificación de Sprints
 
 | Sprint | Periodo | Objetivo | Historias de Usuario | Puntos | Estado |
