@@ -15,6 +15,7 @@
   <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/PostgreSQL-15+-336791?style=for-the-badge&logo=postgresql&logoColor=white"/></a>
   <a href="https://scrumguides.org/"><img src="https://img.shields.io/badge/Metodología-Scrum-00599C?style=for-the-badge&logo=scrum&logoColor=white"/></a>
   <a href="https://git-scm.com/"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/></a>
+  <a href="https://trello.com/"><img src="https://img.shields.io/badge/Trello-0079BF?style=for-the-badge&logo=trello&logoColor=white"/></a>
 </p>
 
 ---
